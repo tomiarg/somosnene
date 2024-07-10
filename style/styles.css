@@ -1,0 +1,330 @@
+@import url('https://db.onlinewebfonts.com/c/a919779c7bf67165eaeaa5375be6fe90?family=Genty+Demo+Regular');
+
+@import url('https://fonts.cdnfonts.com/css/blogger-sans');
+:root{
+    --fuenteHeading: "Genty Demo Regular", sans-serif;
+    --fuenteParrafos: 'Blogger Sans', sans-serif;
+
+    --primario: #784d3C;
+    --gris: #e1e1e1;
+    --blanco: #FFFF;
+    --negro: #000;
+    --verde: #4dadae;
+    --rosa:#bc85bc;
+    --amarillo:#efaa0c;
+    --celeste:#93a9ff;
+    --rosaFuerte:#fdb3fd;
+    --naranja:#ef601d;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+ 
+}
+
+
+
+/*Generals*/
+ul li{
+   list-style: none; 
+   
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 6rem;
+}
+h2{
+    font-size: 5rem;
+    font-weight: bolder;
+    margin: 0;
+}
+h3{
+    font-size: 4rem;
+}
+h4{
+    font-size: 2.5rem;
+    color: var(--blanco);
+}
+.verde{
+    background-color: var(--verde);
+}
+.rosa{
+    background-color: var(--rosa);
+}
+.amarillo{
+    background-color: var(--amarillo);
+}
+.naranja{
+    background-color: var(--naranja);
+}
+.rosaFuerte{
+    background-color: var(--rosaFuerte);
+}
+.celeste{
+    background-color: var(--celeste);
+}
+/*Header*/
+.imagenNene{
+    width: 100%;
+}
+@media (min-width:768px) {
+    .imagenNene{
+        width: 500px;
+    };    
+}
+.redes{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-right: 20rem;
+}
+header{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../assets/images/headingAmarillo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+@media (min-width:768px) {
+    .ordenButtons{
+        display: flex;
+    }
+    
+}
+p{
+    font-size: 2rem;
+    margin:0;
+    padding: 0;
+}
+h1{
+    text-transform: uppercase;
+    margin:0;
+    font-size: 9rem;
+    margin-bottom: 5rem;
+    font-family: var(--fuenteHeading);
+}
+
+.divName{
+    display: flex;
+    gap:1rem;
+}
+
+/*Botón*/
+.buttonA{
+    width: 30rem;
+    display: block;
+    font-family: var(--fuenteParrafos);
+    color: var(--negro);
+    text-align: center;
+    padding: .5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    border-radius: 50px;
+}
+
+.buttonA:hover{
+    color: white;
+}
+/*Main*/
+main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.quienesSomos, .queHacemos{
+    height: 50%;
+    color: white;
+}
+
+.quienesSomos{
+    background-image: url(../assets/images/violetaCelu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quienesSomos-div{
+    width: 100%;
+    text-align: center;
+}
+
+.queHacemos{
+    padding: 0 4.3rem;
+    background-color: #fdb3fd;
+}
+.queHacemos p{    
+    color:var(--negro);
+    font-size: 1.2rem;    
+}
+@media (min-width:400px) {
+    .queHacemos p{    
+        font-size: 1.3rem;    
+    }
+    
+}
+@media (min-width:500px) {
+    .queHacemos p{    
+        font-size: 1.5rem;    
+    }
+    
+}
+@media (min-width:768px) {
+    .queHacemos p{    
+        font-size: 2rem;    
+    }
+    
+}
+.queHacemos h3{
+    font-size: 3rem;
+
+}
+@media (min-width:900px) {
+    main{
+        flex-direction:row;
+    }
+    .quienesSomos, .queHacemos{
+        width: 50%;
+        height: 100%;
+    }
+    .quienesSomos-div{
+        width: 45rem;
+    }
+    .queHacemos p{
+        font-size: 2.5rem;
+         margin-bottom: 1rem;
+    }    
+}
+/*Servicios*/
+section h2{
+    text-align: center;
+}
+.servicios{
+
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .servicios{
+        flex-direction: row;
+    }
+    
+}
+.servicios-card{
+    position: relative;
+    display: flex;
+    width: 34rem;
+    height: 43rem;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    flex-direction: column;
+    justify-content: flex-end;    
+}
+.servicios-card-overlay{
+    color: white;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 0;
+    width: 100%;
+    transition: 0.5s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+}
+.servicios-card-overlay p{
+     padding: 1rem;
+}
+.servicios-card:hover .servicios-card-overlay{
+    height: 100%;
+    cursor: pointer;
+    
+}
+.servicios-redes, .servicios-generacion, .servicios-asesoria{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.servicios-redes{
+    background-image: url(../assets/images/cardAmarilla.png);
+}
+.servicios-generacion{
+    background-image: url(../assets/images/cardVioleta.png);
+}
+.servicios-asesoria{
+    background-image: url(../assets/images/cardNaranja.png);
+}
+.servicios-card-titulo{
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.servicios-card-titulo h4{
+    margin: 0;
+    width: 20rem;
+}
+.servicios-card-titulo-flecha{
+    display: flex;
+    align-content:  center;
+    justify-content: center;
+    width: 6rem;
+    height: 3rem;
+    border:1px white solid;    
+    border-radius: 50px;
+}
+/* programación */
+.programacion-web{
+    padding: 5rem;
+    background-image: url(../assets/images/naranjaCelu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+}
+@media (min-width: 768px) {
+    .programacion-web{
+        flex-direction:row;
+    }
+    .programacion-web-flex{
+        width: 300rem;
+        display: flex;
+        align-items: flex-end;
+    }
+    
+}
