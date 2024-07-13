@@ -236,7 +236,7 @@ section h2{
     
 }
 .servicios-card{
-    position: relative;
+    
     display: flex;
     width: 34rem;
     height: 43rem;
@@ -244,6 +244,17 @@ section h2{
     border-bottom-right-radius: 50px;
     flex-direction: column;
     justify-content: flex-end;    
+}
+
+.servicios-card-overlay p{
+     padding: 1rem;
+}
+
+.servicios-redes, .servicios-generacion, .servicios-asesoria{
+    position: relative;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .servicios-card-overlay{
     color: white;
@@ -260,22 +271,9 @@ section h2{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-
-}
-.servicios-card-overlay p{
-     padding: 1rem;
 }
 .servicios-card:hover .servicios-card-overlay{
-    height: 100%;
-    cursor: pointer;
-    
-}
-.servicios-redes, .servicios-generacion, .servicios-asesoria{
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 100%;    
 }
 .servicios-redes{
     background-image: url(../assets/images/cardAmarilla.png);
@@ -328,3 +326,31 @@ section h2{
     }
     
 }
+/* contacto */
+.contacto{
+    color:var(--blanco);
+    height: 100vh;
+    background-image: url(../assets/images/amarillloContacto.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contacto h1{
+    text-transform: none;
+    margin: 0;
+    border-bottom: solid 0.5rem;
+    font-size: 6rem;
+    padding: 0;
+}
+.contacto a{
+    text-decoration: none;
+    color: var(--blanco);
+}
+.contacto-contactos{
+    display: flex;
+    gap: 3rem;
+}
+
