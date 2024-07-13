@@ -351,6 +351,11 @@ section h2{
 }
 .contacto-contactos{
     display: flex;
+    flex-direction: column;
     gap: 3rem;
 }
-
+@media (min-width: 768px) {
+    .contacto-contactos{
+        flex-direction: row;
+    }
+}
