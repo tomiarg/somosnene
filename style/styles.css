@@ -313,15 +313,19 @@ section h2{
     padding: 1rem;
     flex-direction: column;
 }
+.collabs-text{
+    padding: 5rem;
+}
 @media (min-width: 768px){
     .collabs{
         flex-direction: row;
     }
+    .collabs-text{
+        width: 50rem;
+        padding: 5rem;
+    }
 }
-.collabs-text{
-    width: 50rem;
-    padding: 5rem;
-}
+
 .collabs h2{
     color: var(--amarillo);
     margin: 0;
@@ -336,7 +340,7 @@ section h2{
 }
 .collabs_grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    
     justify-items: center;
     gap: 1rem;
 }
