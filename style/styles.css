@@ -75,6 +75,9 @@ h4{
 .celeste{
     background-color: var(--celeste);
 }
+.color-azul{
+    color:var(--celeste)
+}
 /*Header*/
 .imagenNene{
     width: 100%;
@@ -303,6 +306,61 @@ section h2{
     border:1px white solid;    
     border-radius: 50px;
 }
+/* Collabs */
+.collabs{
+    background-color: #302b2b;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+}
+@media (min-width: 768px){
+    .collabs{
+        flex-direction: row;
+    }
+}
+.collabs-text{
+    width: 50rem;
+    padding: 5rem;
+}
+.collabs h2{
+    color: var(--amarillo);
+    margin: 0;
+    text-align: start;
+    
+}
+.collabs h3{
+ color: white;
+ text-transform: uppercase;
+ font-size: 5rem;
+ line-height: 1.5;
+}
+.collabs_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 1rem;
+}
+.collabs-img{
+    height: 40rem;
+    width: auto;
+    border-radius: 2px;
+}
+
+@media (min-width: 768px){
+    .collabs_grid{
+        flex-basis: 70%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    .collabs-img{
+        height: 40rem;
+        width: 100%;
+        border-radius: 2px;
+    }
+
+}
+
 /* programación */
 .programacion-web{
     padding: 5rem;
