@@ -364,6 +364,27 @@ section h2{
     }
 
 }
+/* Clientes Links */
+.clientes{
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+.clientes-links{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap:2rem;
+}
+
+.clientes-link-circulo{
+    display: flex;
+    align-content:  center;
+    justify-content: center;
+    width: 8rem;
+    height: 5rem;
+    border:1px white solid;    
+    border-radius: 50px;
+}
 
 /* programación */
 .programacion-web{
