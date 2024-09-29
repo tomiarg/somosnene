@@ -369,23 +369,72 @@ section h2{
     padding: 3rem;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
+}
+@media (min-width:768px) {
+    .clientes{
+        flex-direction: row;
+    }
+    
 }
 .clientes-links{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     gap:2rem;
+}
+@media (min-width:768px) {
+    .clientes-links{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
 }
 
 .clientes-link-circulo{
     display: flex;
-    align-content:  center;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: azure;
+    font-size: 1.4rem;
+    font-weight: bold;
+    position: relative;
+    align-items:  center;
     justify-content: center;
     width: 8rem;
     height: 5rem;
     border:1px white solid;    
     border-radius: 50px;
 }
+.clientes-link-circulo:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+    background-size: 800%;
+    border-radius: 12px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+.clientes-link-circulo a{
+    color: white;
+}
 
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
 /* programación */
 .programacion-web{
     padding: 5rem;
