@@ -367,6 +367,26 @@ section h2{
     height: 30rem;
   }
 
+  @media (min-width: 1100px) {
+    .swiper-slide{
+        width: 20rem;
+    }    
+  }
+  @media (min-width: 900px) {
+    .swiper-slide{
+        width: 20rem;
+    }    
+  }
+  @media (min-width: 700px) {
+    .swiper-slide{
+        width: 25rem;
+    }    
+  }
+  @media (min-width: 610px) {
+    .swiper-slide{
+        width: 30rem;
+    }    
+  }
   .swiper-slide img {
     display: block;
     width: 100%;
@@ -378,7 +398,6 @@ section h2{
         width: 100%;
         border-radius: 14px;
       } 
-    
   }
 /* .collabs_grid{
     display: grid;
