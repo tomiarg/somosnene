@@ -312,13 +312,17 @@ section h2{
     display: flex;
     padding: 1rem;
     flex-direction: column;
+    height: 100vh;
 }
 .collabs-text{
-    padding: 5rem;
+    padding-top:2rem;
+    line-height: normal;
 }
 @media (min-width: 768px){
     .collabs{
         flex-direction: row;
+        justify-items:center;
+        align-items: space-around;
     }
     .collabs-text{
         width: 50rem;
@@ -335,10 +339,48 @@ section h2{
 .collabs h3{
  color: white;
  text-transform: uppercase;
- font-size: 5rem;
- line-height: 1.5;
+ font-size: 4rem;
+ margin: 0; 
+ padding-bottom:3rem;
 }
-.collabs_grid{
+.swiper {
+    flex-basis: 60%;
+    width: 100%;
+    padding-bottom: 5rem;
+  }
+@media (min-width: 768px) {
+    .swiper{
+        padding-top:5rem;
+    }
+    .collabs h3{
+        font-size: 5rem;
+        line-height: 1.5;
+        padding-bottom:0;
+    }
+    
+}
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    border-radius: 14px;
+  } 
+  @media (min-width: 768px) {
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        border-radius: 14px;
+      } 
+    
+  }
+/* .collabs_grid{
     display: grid;
     
     justify-items: center;
@@ -363,7 +405,7 @@ section h2{
         border-radius: 2px;
     }
 
-}
+}  */
 /* Clientes Links */
 .clientes{
     padding: 3rem;
