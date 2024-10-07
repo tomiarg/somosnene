@@ -238,8 +238,7 @@ section h2{
     }
     
 }
-.servicios-card{
-    
+.servicios-card{    
     display: flex;
     width: 34rem;
     height: 43rem;
@@ -261,6 +260,8 @@ section h2{
 }
 .servicios-card-overlay{
     color: white;
+    font-size: 1rem;
+    line-height: normal;
     position:absolute;
     bottom: 0;
     left: 0;
@@ -274,6 +275,11 @@ section h2{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.servicios-card-overlay ul li{
+    list-style: dot;
+    font-size: medium;
+
 }
 .servicios-card:hover .servicios-card-overlay{
     height: 100%;    
