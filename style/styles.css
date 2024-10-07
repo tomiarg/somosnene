@@ -20,6 +20,7 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 *, *:before, *:after{
     box-sizing: inherit;
@@ -160,9 +161,11 @@ main{
     color: white;
 }
 
+
 .quienesSomos{
     background-image: url(../assets/images/violetaCelu.png);
     background-repeat: no-repeat;
+    padding: 2rem;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -183,24 +186,25 @@ main{
 }
 @media (min-width:400px) {
     .queHacemos p{    
-        font-size: 1.3rem;    
+        font-size: 1rem;    
     }
     
 }
 @media (min-width:500px) {
     .queHacemos p{    
-        font-size: 1.5rem;    
+        font-size: 1.3rem;    
     }
     
 }
 @media (min-width:768px) {
     .queHacemos p{    
-        font-size: 2rem;    
+        font-size: 1.8rem;    
     }
     
 }
 .queHacemos h3{
-    font-size: 3rem;
+    font-size: 4rem;
+    line-height: 1;
 
 }
 @media (min-width:900px) {
@@ -215,8 +219,9 @@ main{
         width: 45rem;
     }
     .queHacemos p{
-        font-size: 2.5rem;
-         margin-bottom: 1rem;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        
     }    
 }
 /*Servicios*/
@@ -402,32 +407,7 @@ section h2{
         border-radius: 14px;
       } 
   }
-/* .collabs_grid{
-    display: grid;
-    
-    justify-items: center;
-    gap: 1rem;
-}
-.collabs-img{
-    height: 40rem;
-    width: auto;
-    border-radius: 2px;
-}
 
-@media (min-width: 768px){
-    .collabs_grid{
-        flex-basis: 70%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-    }
-    .collabs-img{
-        height: 40rem;
-        width: 100%;
-        border-radius: 2px;
-    }
-
-}  */
 /* Clientes Links */
 .clientes{
     padding: 3rem;
