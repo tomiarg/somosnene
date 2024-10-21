@@ -539,3 +539,10 @@ section h2{
         flex-direction: row;
     }
 }
+/* Footer */
+footer{
+    border-top: 1px #f7f7f7 solid;
+    margin-top: -5rem;
+    color: #f7f7f7;
+    text-align: center;
+}
