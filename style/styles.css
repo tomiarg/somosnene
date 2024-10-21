@@ -307,13 +307,14 @@ section h2{
 .servicios-card-titulo h4{
     margin: 0;
     width: 20rem;
+    line-height: normal;
 }
 .servicios-card-titulo-flecha{
     display: flex;
-    align-content:  center;
+    align-items:  center;
     justify-content: center;
     width: 6rem;
-    height: 3rem;
+    height: 6rem;
     border:1px white solid;    
     border-radius: 50px;
 }
@@ -501,6 +502,9 @@ section h2{
         align-items: flex-end;
     }
     
+}
+.programacion-lista{
+    list-style: circle;
 }
 /* contacto */
 .contacto{
