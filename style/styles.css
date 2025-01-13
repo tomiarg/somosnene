@@ -100,11 +100,16 @@ header{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
-    background-image: url(../assets/images/headingAmarillo.png);
+    align-items: center;    
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+}
+.notwebp header{
+    background-image: url(../assets/images/headingAmarillo.png);
+}
+.webp header{
+    background-image: url(../assets/images/headingAmarillo.webp);
 }
 @media (min-width:768px) {
     .ordenButtons{
@@ -162,14 +167,19 @@ main{
 }
 
 
-.quienesSomos{
-    background-image: url(../assets/images/violetaCelu.png);
+.quienesSomos{    
     background-repeat: no-repeat;
     padding: 2rem;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.notwebp .quienesSomos{
+    background-image: url(../assets/images/violetaCelu.png);
+}
+.webp .quienesSomos{
+    background-image: url(../assets/images/violetaCelu.webp);
 }
 .quienesSomos-div{
     width: 100%;
@@ -289,13 +299,23 @@ section h2{
 .servicios-card:hover .servicios-card-overlay{
     height: 100%;    
 }
-.servicios-redes{
+.notwebp .servicios-redes{
     background-image: url(../assets/images/cardAmarilla.png);
 }
-.servicios-generacion{
+.webp .servicios-redes{
+    background-image: url(../assets/images/cardAmarilla.webp);
+
+}
+.notwebp .servicios-generacion{
     background-image: url(../assets/images/cardVioleta.png);
 }
-.servicios-asesoria{
+.webp .servicios-generacion{
+    background-image: url(../assets/images/cardVioleta.webp);
+}
+.notwebp .servicios-asesoria{
+    background-image: url(../assets/images/cardNaranja.png);
+}
+.webp .servicios-asesoria{
     background-image: url(../assets/images/cardNaranja.png);
 }
 .servicios-card-titulo{
@@ -483,7 +503,7 @@ section h2{
 /* programación */
 .programacion-web{
     padding: 5rem;
-    background-image: url(../assets/images/naranjaCelu.png);
+    
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -491,6 +511,12 @@ section h2{
     display: flex;
     flex-direction: column;
     justify-content: space-around;    
+}
+.notwebp .programacion-web{
+    background-image: url(../assets/images/naranjaCelu.png);
+}
+.webp .programacion-web{
+    background-image: url(../assets/images/naranjaCelu.webp);
 }
 @media (min-width: 768px) {
     .programacion-web{
@@ -510,13 +536,19 @@ section h2{
 .contacto{
     color:var(--blanco);
     height: 100vh;
-    background-image: url(../assets/images/amarillloContacto.png);
+    
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+.notwebp .contacto{
+    background-image: url(../assets/images/amarillloContacto.png);
+}
+.webp .contacto{
+    background-image: url(../assets/images/amarillloContacto.webp);
 }
 .contacto h1{
     text-transform: none;
